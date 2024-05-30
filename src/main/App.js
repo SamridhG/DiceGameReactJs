@@ -1,11 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom/client"
+import LandingPage from "../component/LandingPage";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-const AppLayout=()=>{
-    return (
-        <div>Hello World</div>
-    )
-}
 const Error=()=>{
     return (
         <div>Hello Error</div>
@@ -19,7 +15,7 @@ const Game=()=>{
 const appRouter=createBrowserRouter([
     {
       path:'/',
-      element:<AppLayout/>,
+      element:<LandingPage/>,
       errorElement:<Error/>
     },
     {
