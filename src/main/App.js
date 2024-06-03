@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDom from "react-dom/client"
 import LandingPage from "../component/LandingPage";
+import GamePlayScreen from "../component/GamePlayScreen";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const Error=()=>{
     return (
         <div>Hello Error</div>
-    )
-}
-const Game=()=>{
-    return (
-        <div>Hello Game</div>
     )
 }
 const appRouter=createBrowserRouter([
@@ -20,7 +16,7 @@ const appRouter=createBrowserRouter([
     },
     {
         path:'/gameplay',
-        element:<Game/>
+        element:<GamePlayScreen/>
     }
 
 ])
